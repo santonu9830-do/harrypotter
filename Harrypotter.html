@@ -11,6 +11,8 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="harrypotter.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    
+       
 
     
 </head>
@@ -18,6 +20,7 @@
 <!-- navbar starting -->
  <div class="row">
  <header class="magic-bg">
+    
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Harry potter</a>
@@ -37,10 +40,10 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="http://www.youtube.com/@harrypotter">Youtube</a></li>
                             <li><a class="dropdown-item" href="hogwartshistory.html">Hogwarts History</a></li>
-                            <li><a class="dropdown-item" href="#">Characters</a></li>
+                            <li><a class="dropdown-item" href="characters.html">Characters</a></li>
                         
-                            <li><a class="dropdown-item" href="#">Dark Arts</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="darkarts.html">Dark Arts</a></li>
+                            
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -49,16 +52,16 @@
                             Series
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Harry Potter and the Philosopher's Stone</a></li>
+                            <li><a class="dropdown-item" href="philosopher.html">Harry Potter and the Philosopher's Stone</a></li>
                             
-                            <li><a class="dropdown-item" href="#">Harry Potter and the Chamber of Secrets</a></li>
-                            <li><a class="dropdown-item" href="#">Harry Potter and the Prisoner of Azkaban</a></li>
-                            <li><a class="dropdown-item" href="#">Harry Potter and the Goblet of Fire</a></li>
+                            <li><a class="dropdown-item" href="Chamber of Secrets.html">Harry Potter and the Chamber of Secrets</a></li>
+                            <li><a class="dropdown-item" href="Prisoner of Azkaban.html">Harry Potter and the Prisoner of Azkaban</a></li>
+                            <li><a class="dropdown-item" href="Goblet of Fire.html">Harry Potter and the Goblet of Fire</a></li>
 
-                            <li><a class="dropdown-item" href="#">Harry Potter and the Order of the Phoenix</a></li>
-                            <li><a class="dropdown-item" href="#">Harry Potter and the Half-Blood Prince</a></li>
-                            <li><a class="dropdown-item" href="#">Harry Potter and the Deathly Hallows</a></li>
-                            <li><a class="dropdown-item" href="#">Harry Potter and the cursed child</a></li>
+                            <li><a class="dropdown-item" href="the Order of the Phoenix.html">Harry Potter and the Order of the Phoenix</a></li>
+                            <li><a class="dropdown-item" href="the Half-Blood Prince.html">Harry Potter and the Half-Blood Prince</a></li>
+                            <li><a class="dropdown-item" href="the Deathly Hallows.html">Harry Potter and the Deathly Hallows</a></li>
+                            <li><a class="dropdown-item" href="the cursed child.html">Harry Potter and the cursed child</a></li>
 
                         </ul>
                     </li>
@@ -66,15 +69,14 @@
                         About
                     </a>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                
             </div>
         </div>
     </nav>
+    
     </header>
     </div>
+    
     <!-- navbar ending -->
      <!---Banner-->
      <div class="row">
@@ -84,7 +86,7 @@
 joined the cast of the upcoming HBO Original Harry Potter series!</p>
     <button>Find Out More</button>
 </div>
-<div class="frame">
+<div class="image-collage col-6">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjbCrTLtbNmc_CkXfMT1SRnB3KoCHN93M8dA&s" alt="Image 1">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT46iLNvpfawNjLMVxvjvy8wxeZr2F95OOsAQ&s" alt="Image 2">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9S2oCCWfDGjUevAM7UonysI2R5TmxjqyXg&s" alt="Image 3">
@@ -124,5 +126,49 @@ joined the cast of the upcoming HBO Original Harry Potter series!</p>
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="magic-circle"></div>
+        <p>Loading Hogwarts Magic...</p>
+    </div>
+    
+    <!-- Your page content -->
+    <div id="content" style="display:none;">
+        <!-- All your normal page HTML goes here -->
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+            loader.style.display = "none";   // hide loader
+            content.style.display = "block"; // show page
+        });
+    </script>
+
 </body>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>A World of Magic ✨</h3>
+            <p>Step into a realm of spells, potions, and enchanted adventures.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="Harrypotter.html">Home</a></li>
+                <li><a href="hogwartshistory.html">Castle</a></li>
+                <li><a href="philosopher.html">Classes</a></li>
+                <li><a href="darkarts.html">Spells</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h4>Contact</h4>
+            <p>Email: santonu9830@gmail.com</p>
+            <p>© Santonu9830-do 2024</p>
+        </div>
+    </div>
+</footer>
+
 </html>

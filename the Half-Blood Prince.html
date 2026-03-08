@@ -50,33 +50,48 @@
                                 aria-expanded="false">
                                 Series
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Harry Potter and the Philosopher's Stone</a></li>
-
-                                <li><a class="dropdown-item" href="#">Harry Potter and the Chamber of Secrets</a></li>
-                                <li><a class="dropdown-item" href="#">Harry Potter and the Prisoner of Azkaban</a></li>
-                                <li><a class="dropdown-item" href="#">Harry Potter and the Goblet of Fire</a></li>
-
-                                <li><a class="dropdown-item" href="#">Harry Potter and the Order of the Phoenix</a></li>
-                                <li><a class="dropdown-item" href="#">Harry Potter and the Half-Blood Prince</a></li>
-                                <li><a class="dropdown-item" href="#">Harry Potter and the Deathly Hallows</a></li>
-                                <li><a class="dropdown-item" href="#">Harry Potter and the cursed child</a></li>
-
-                            </ul>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="philosopher.html">Harry Potter and the Philosopher's Stone</a></li>
+                        
+                            <li><a class="dropdown-item" href="Chamber of Secrets.html">Harry Potter and the Chamber of Secrets</a></li>
+                            <li><a class="dropdown-item" href="Prisoner of Azkaban.html">Harry Potter and the Prisoner of Azkaban</a></li>
+                            <li><a class="dropdown-item" href="Goblet of Fire.html">Harry Potter and the Goblet of Fire</a></li>
+                        
+                            <li><a class="dropdown-item" href="the Order of the Phoenix.html">Harry Potter and the Order of the Phoenix</a></li>
+                            <li><a class="dropdown-item" href="the Half-Blood Prince.html">Harry Potter and the Half-Blood Prince</a></li>
+                            <li><a class="dropdown-item" href="the Deathly Hallows.html">Harry Potter and the Deathly Hallows</a></li>
+                            <li><a class="dropdown-item" href="the cursed child.html">Harry Potter and the cursed child</a></li>
+                        
+                        </ul>
                         </li>
                         <a class="nav-link " href="#" role="button" aria-expanded="false">
                             About
                         </a>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                   
                 </div>
             </div>
         </nav>
     </header>
     <!-- navbar ending -->
+     <!-- Loader -->
+    <div id="loader">
+        <div class="magic-circle"></div>
+        <p>Loading Hogwarts Magic...</p>
+    </div>
+    
+    <!-- Your page content -->
+    <div id="content" style="display:none;">
+        <!-- All your normal page HTML goes here -->
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+            loader.style.display = "none";   // hide loader
+            content.style.display = "block"; // show page
+        });
+    </script>
 </body>
 
 </html>

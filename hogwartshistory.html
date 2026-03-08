@@ -68,15 +68,77 @@
                             About
                         </a>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    
                 </div>
             </div>
         </nav>
     </header>
     <!-- navbar ending -->
+     <!-- Loader -->
+    <div id="loader">
+        <div class="magic-circle"></div>
+        <p>Loading Hogwarts Magic...</p>
+    </div>
+    
+    <!-- Your page content -->
+    <div id="content" style="display:none;">
+        <!-- All your normal page HTML goes here -->
+    </div>
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+            loader.style.display = "none";   // hide loader
+            content.style.display = "block"; // show page
+        });
+    </script>
+    
+    <div class="scroll">
+        <h1>Hogwarts History</h1>
+        <p>
+            Hogwarts School of Witchcraft and Wizardry is the most renowned magical institution in Britain, standing hidden
+            in the Scottish Highlands for over a millennium. Founded around the 10th century, it was the vision of four of
+            the greatest witches and wizards of their age: <span class="highlight">Godric Gryffindor</span>, <span
+                class="highlight">Helga Hufflepuff</span>, <span class="highlight">Rowena Ravenclaw</span>, and <span
+                class="highlight">Salazar Slytherin</span>. Each founder brought unique ideals to the school, shaping the
+            four houses that continue to define Hogwarts life...
+        
+    
+        
+            The founders created the enchanted Sorting Hat, originally belonging to Gryffindor, to ensure that future
+            generations of students would be placed into the house that best matched their qualities. This tradition remains
+            one of the most iconic ceremonies at Hogwarts. However, disagreements soon arose. Salazar Slytherin believed
+            only pure‑blood witches and wizards should be admitted, fearing that Muggle‑borns would weaken the school...
+      
+            Over the centuries, Hogwarts grew into a thriving center of magical education. Its sprawling castle, enchanted
+            staircases, and hidden rooms became legendary. Students studied subjects ranging from Potions and Charms to
+            Transfiguration, Herbology, and Defense Against the Dark Arts. The school motto, <em>Draco Dormiens Nunquam
+                Titillandus</em> (“Never tickle a sleeping dragon”), reflects both its whimsical nature and its underlying
+            caution...
+        
+            Hogwarts also became home to many magical beings. Each house has its own ghost, such as Nearly Headless Nick for
+            Gryffindor and the Bloody Baron for Slytherin. Peeves the poltergeist roams the halls causing mischief, while
+            house‑elves maintain the kitchens and castle. The school’s enchanted protections make it nearly impossible for
+            outsiders to locate or invade...
+        
+            Throughout the ages, Hogwarts has been led by notable headmasters. Armando Dippet served before the mid‑20th
+            century, while <span class="highlight">Albus Dumbledore</span> became one of the most celebrated leaders in its
+            history. Dumbledore guided the school through turbulent times, including the rise of Lord Voldemort, and was
+            instrumental in the eventual defeat of the Dark Lord...
+        
+            Hogwarts has witnessed many historic events: the opening of the Chamber of Secrets, the Triwizard Tournament,
+            and the climactic Battle of Hogwarts in 1998. Despite damage to the castle, the victory ensured Hogwarts
+            remained a symbol of resilience and hope. Today, Hogwarts continues to educate young witches and wizards,
+            blending ancient traditions with evolving magical practices...
+        </p>
+        <div class="hogwarts-img">
+            <img src="image_ec5696e7.png" alt="Hogwarts Castle">
+        </div>
+
+    </div>
+    
+    </body>
+
 </body>
 
 </html>
