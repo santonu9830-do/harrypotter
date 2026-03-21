@@ -77,21 +77,59 @@
         <div class="card">
             <img src="Gemini_Generated_Image_oz3v27oz3v27oz3v.png" alt="Harry Potter">
             <div class="card-content">
-                <h3>Harry Potter</h3>
-                <p>The Boy Who Lived, destined to face Voldemort. Harry James Potter is the central protagonist of J.K. Rowling’s Harry Potter series, known as “The Boy Who Lived.”
-                </p>
-                    
+                <script>
+                    function myFunction() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
 
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+                <h3>Harry Potter</h3>
+                <p>
+                    Harry Potter is a beloved fantasy series created by J.K. Rowling that follows the journey of a young wizard destined to
+                    face dark forces. Set in the magical world of Hogwarts School of Witchcraft and Wizardry, the story blends friendship,
+                    courage, and the struggle between good and evil....
+                    <span id="dots">...</span>
+                    <span id="more">Harry, along with his loyal friends Hermione Granger and Ron Weasley, learns spells, uncovers secrets, and battles
+                    challenges that test their bravery. The series explores themes of love, sacrifice, and identity, making it resonate with
+                    readers of all ages. Its mix of magic, mystery, and adventure has made it timeless worldwide.</span>
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+                    
             </div>
         </div>
     
         <div class="card">
             <img src="Gemini_Generated_Image_72se0072se0072se.png" alt="Hermione Granger">
-            <div class="card-content">
                 <h3>Hermione Granger</h3>
-                <p>Hermione Jean Granger is one of the most important characters in the Harry Potter series — brilliant, brave, and deeply
-                loyal. She represents intellect, justice, and compassion throughout the story.
-</p>
+                <p>
+                        Harry Potter is a beloved fantasy series created by J.K. Rowling that follows the journey of a young wizard destined
+                        to
+                        face dark forces. Set in the magical world of Hogwarts School of Witchcraft and Wizardry, the story blends
+                        friendship,
+                        courage, and the struggle between good and evil....
+                    <span id="dots">...</span>
+                    <span id="more">Harry, along with his loyal friends Hermione Granger and Ron Weasley, learns spells, uncovers
+                        secrets, and battles
+                        challenges that test their bravery. The series explores themes of love, sacrifice, and identity, making it
+                        resonate with
+                        readers of all ages. Its mix of magic, mystery, and adventure has made it timeless worldwide.</span>
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+
+               
             </div>
         </div>
     
@@ -99,6 +137,7 @@
             <img src="ron.png" alt="Ron Weasley">
             <div class="card-content">
                 <h3>Ron Weasley</h3>
+            <div class="card-content">
                 <p>Ronald Bilius Weasley is one of the central characters in the Harry Potter series — loyal, brave, and often the heart of
                 comic relief, but also a key hero in the fight against Voldemort.
 .</p>

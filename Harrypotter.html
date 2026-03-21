@@ -11,10 +11,8 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="harrypotter.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-    
        
 
-    
 </head>
 <body>
 <!-- navbar starting -->
@@ -65,7 +63,7 @@
 
                         </ul>
                     </li>
-                    <a class="nav-link " href="#" role="button" aria-expanded="false">
+                    <a class="nav-link " href="about.html" role="button" aria-expanded="false">
                         About
                     </a>
                 </ul>
@@ -80,20 +78,38 @@
     <!-- navbar ending -->
      <!---Banner-->
      <div class="row">
-<div class="col-6">
+<div class="col-4 banner-content">
 <h2>HBO’s Harry Potter television series confirms casting of Hogwarts students</h2>
 <p>The halls of Hogwarts are filling up fast as we can excitingly reveal the students of witchcraft and wizardry who have
 joined the cast of the upcoming HBO Original Harry Potter series!</p>
 <h3>visit Harry Potter's official site</h3>
-    <button>Official site!!
-
-    </button>
+    <button>Official site!!</button>
 </div>
-<div class="image-collage col-6">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjbCrTLtbNmc_CkXfMT1SRnB3KoCHN93M8dA&s" alt="Image 1">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT46iLNvpfawNjLMVxvjvy8wxeZr2F95OOsAQ&s" alt="Image 2">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9S2oCCWfDGjUevAM7UonysI2R5TmxjqyXg&s" alt="Image 3">
-    <img src="https://i0.wp.com/images4.fanpop.com/image/photos/22300000/Remus-Lupin-promo-remus-lupin-22386366-873-1050.jpg" alt="Image 4">
+<div class="image-collage col-8">
+    <div class="magic-gallery">
+    
+        <div class="magic-frame">
+            <img src="">
+            <div class="caption">Harry Potter</div>
+        </div>
+    
+        <div class="magic-frame">
+            <img src="img2.jpg">
+            <div class="caption">Hermione Granger</div>
+        </div>
+    
+        <div class="magic-frame">
+            <img src="img3.jpg">
+            <div class="caption">Ron Weasley</div>
+        </div>
+    
+        <div class="magic-frame">
+            <img src="img4.jpg">
+            <div class="caption">Sirius Black</div>
+        </div>
+    
+    </div>
+
 </div>
      </div>
     <div id="hogwartsSlider" class="carousel slide" data-bs-ride="carousel">
@@ -145,6 +161,10 @@ joined the cast of the upcoming HBO Original Harry Potter series!</p>
             const content = document.getElementById("content");
             loader.style.display = "none";   // hide loader
             content.style.display = "block"; // show page
+            setTimeout(function() {
+                loader.style.display = "none";   // hide loader after 3 seconds
+                content.style.display = "block"; // show page
+            }, 3000);
         });
     </script>
 
