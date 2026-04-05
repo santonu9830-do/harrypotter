@@ -30,7 +30,9 @@ body {
 }
 
 .nav-link:hover {
-    color: #d4af37 !important;
+    .nav-link:hover {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        };
 }
 
 .dropdown-menu {
